@@ -76,7 +76,8 @@ const ServicesPart = () => {
     return (
         <FlexTopPart className="gap-3 pb-13">
                 <label className="font-bold text-2xl text-black">Government online services</label>
-                <FlexPart className="flex-wrap gap-4">
+                {/* <FlexPart className="flex-wrap gap-4"> */}
+                <FlexPart className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
                     {ServicesCardList.map((card, index) => (
                      <ServicesCard
                         key = {index}

@@ -127,7 +127,7 @@ const SideNav = () => {
     return (
 
 
-        <div className="w-[14%] flex items-start shrink-0 relative">
+        <div className="w-[14%] hidden lg:flex items-start shrink-0 relative">
         <div ref={sidebarRef} className="w-full flex flex-col text-white py-5 gap-1 min-h-screen sticky top-0 bg-[var(--color-primary)]">
             
            <div className="w-full min-h-20 p-3">

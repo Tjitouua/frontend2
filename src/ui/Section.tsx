@@ -8,7 +8,7 @@ interface Props {
 
 const Section:React.FC<Props> = ({ children }) => {
       return (
-         <div className="w-6/7 min-h-screen flex flex-col">
+         <div className="w-full lg:w-6/7 min-h-screen flex flex-col">
            {children}
         </div>
       )
