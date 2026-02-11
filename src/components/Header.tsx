@@ -5,7 +5,7 @@ import TopHeader from "./TopHeader";
 
 const Header = () => {
     return (
-          <div className="w-full flex-col">
+          <div className="w-full flex-col sticky top-0 z-90 bg-[var(--color-secondary-card)]">
             <TopHeader />
            <header className="w-full min-h-10 flex justify-between py-2 px-10 items-center">
 

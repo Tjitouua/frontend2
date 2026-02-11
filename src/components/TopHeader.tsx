@@ -8,10 +8,10 @@ const TopHeader = () => {
             <nav>
               <ul className="flex gap-10">
                <Link to="/">Home</Link>
-               <Link to="/">Citizen</Link>
-               <Link to="/">Entrepreneur</Link>
                <Link to="/">Tourism</Link>
                <Link to="/">Government</Link>
+               <Link to="/">News</Link>
+               <Link to="/">Services</Link>
               </ul>
             </nav>
 

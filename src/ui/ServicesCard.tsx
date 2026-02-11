@@ -13,16 +13,16 @@ interface ServicesProps {
 
 const ServicesCard: React.FC<ServicesProps> = ({ image, title, desc }) => {
      return (
-        <div className="flex flex-col mb-2 cursor-pointer rounded-xl shadow shadow-black/30">
+        <div className="flex flex-col mb-2 cursor-pointer rounded-xl shadow shadow-black/30 transform transition-all duration-300 hover:-translate-y-2 hover:bg-[var(--color-secondary-border)]/50 hover:text-[var(--color-primaryy)]">
             {/* Image Part  */}
-            <div className="w-65 h-35 bg-cover bg-center rounded-t-xl" style={{ backgroundImage: `url(${image})` }}>
+            <div className="w-68 h-35 bg-cover bg-center rounded-t-xl" style={{ backgroundImage: `url(${image})` }}>
                 {/* <img className="w-full h-full rounded-t-xl" src="/images/IDs.jpg" /> */}
             </div>
             {/* Info Part  */}
             <div className="px-4 cursor-pointer py-2 pb-3 flex flex-col border-t border-t-transparent rounded-b-xl" style={{ borderBottomColor: "var(--color-text-muted)", borderLeftColor: "var(--color-text-muted)", borderRightColor: "var(--color-text-muted)" }}>
                 <label className="font-bold font-serif">{title}</label>
                 <label className="text-sm" style={{color: "var(--color-text-muted)"}}>{desc}</label>
-                <Link to="#" className="flex gap-2 items-center text-sm font-semibold mt-1" style={{color: "var(--color-primaryy)"}}>Access service <IoIosArrowForward className="mt-1" /></Link>
+                <Link to="#" className="flex gap-2 items-center text-sm font-semibold mt-1 hover:underline" style={{color: "var(--color-primaryy)"}}>Access service <IoIosArrowForward className="mt-1" /></Link>
             </div>
         </div>
      )

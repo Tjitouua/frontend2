@@ -9,7 +9,7 @@ interface Props {
 
 const FlexTopPart:React.FC<Props> = ({ children, className }) => {
 
-    const base = "flex w-full min-h-screen flex-col px-15 py-7";
+    const base = "flex w-full min-h-screen items-start flex-col px-15 py-7";
 
 
      return (

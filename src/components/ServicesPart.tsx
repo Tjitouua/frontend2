@@ -1,3 +1,4 @@
+import Button from "../ui/Button";
 import FlexPart from "../ui/FlexPart";
 import FlexTopPart from "../ui/FlexTopPart";
 import ServicesCard from "../ui/ServicesCard";
@@ -14,14 +15,39 @@ const ServicesPart = () => {
         desc: "Replace or renew ID"
         },
         {
+        image: "/images/jobs.jpg",
+        title: "Government Vacancies",
+        desc: "View vacancies or apply online"
+        },
+        {
+        image: "/images/oldPension.jpg",
+        title: "Old Age Pension",
+        desc: "Apply for pension grant"
+        },
+        {
+        image: "/images/visa.jpg",
+        title: "Permits & Visas",
+        desc: "Apply for permits or visas"
+        },
+        {
         image: "/images/birthCertificate.jpg",
         title: "Birth Certificate",
         desc: "Apply or reprint certificate"
         },
         {
+        image: "/images/business.jpg",
+        title: "Business Registration",
+        desc: "Register a business"
+        },
+        {
         image: "/images/passport.png",
         title: "Passport",
         desc: "Apply or renew passport"
+        },
+        {
+        image: "/images/socialGrants.jpg",
+        title: "Social Grants",
+        desc: "Apply for state assistance"
         },
         {
         image: "/images/license.jpg",
@@ -34,11 +60,6 @@ const ServicesPart = () => {
         desc: "Request clearance certificate"
         },
         {
-        image: "/images/oldPension.jpg",
-        title: "Old Age Pension",
-        desc: "Apply for pension grant"
-        },
-        {
         image: "/images/votingCard.png",
         title: "Voter Registration",
         desc: "Register or update details"
@@ -48,34 +69,14 @@ const ServicesPart = () => {
         title: "Marriage Certificate",
         desc: "Apply or reprint certificate"
         },
-        {
-        image: "/images/business.jpg",
-        title: "Business Registration",
-        desc: "Register a business"
-        },
-        {
-        image: "/images/socialGrants.jpg",
-        title: "Social Grants",
-        desc: "Apply for state assistance"
-        },
-        {
-        image: "/images/policeClearance.png",
-        title: "Business Registration",
-        desc: "Register a business"
-        },
-        {
-        image: "/images/policeClearance.png",
-        title: "Business Registration",
-        desc: "Register a business"
-        }
     ];
 
 
 
     return (
-        <FlexTopPart className="gap-3">
+        <FlexTopPart className="gap-3 pb-13">
                 <label className="font-bold text-2xl text-black">Government online services</label>
-                <FlexPart className="flex-wrap gap-5">
+                <FlexPart className="flex-wrap gap-4">
                     {ServicesCardList.map((card, index) => (
                      <ServicesCard
                         key = {index}
@@ -85,6 +86,7 @@ const ServicesPart = () => {
                       />
                      ))}
                 </FlexPart>
+                <Button className="rounded-md">Access More Services</Button>
         </FlexTopPart>
     )
 }
