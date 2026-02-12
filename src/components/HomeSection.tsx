@@ -1,5 +1,6 @@
 import FlexTopPart from "../ui/FlexTopPart";
 import Section from "../ui/Section";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import NewsPart from "./NewsPart";
@@ -16,6 +17,7 @@ const HomeSection = () => {
             <Hero />
             <ServicesPart />
             <NewsPart />
+            <Footer />
         </Section>
       )
 }
