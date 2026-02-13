@@ -14,7 +14,7 @@ const LoginFormID = () => {
                   !px-5 rounded-lg text-sm" style={{ borderColor: "var(--color-text-default2)" }}>
 
                        <FormInput 
-                         label = "e-ID Card"
+                         label = "ID Card"
                          type = "text"
                          placeholder = "Enter your 10-digit ID"
                        />

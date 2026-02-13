@@ -11,7 +11,7 @@ const FormInput: React.FC<FormInputProps> = ({ label, containerClassName = "", c
     return ( 
         <div className={`w-full flex flex-col gap-2 ${containerClassName}`}>
             <label className="font-semibold">{label}</label>
-            <input type="text" className={`border rounded-md p-2 bg-[var(--color-secondary)] ${className}`} placeholder="Enter your 10-digit ID" style={{ borderColor: "var(--color-text-default2)" }}/>
+            <input type="text" className={`border rounded-md p-2 bg-[var(--color-secondary)] ${className}`} style={{ borderColor: "var(--color-text-default2)" }} {...props}/>
         </div>
     );
 }
