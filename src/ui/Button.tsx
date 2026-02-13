@@ -11,7 +11,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({ children, onClick, type = "button", className="" }) => {
 
-    const base = "py-2 rounded-2xl text-white px-10 bg-[var(--color-primaryy)] cursor-pointer hover:bg-[var(--color-primaryy)]/70";
+    const base = "py-3 rounded-md text-sm font-semibold text-white px-10 bg-[var(--color-primary)] cursor-pointer hover:bg-[var(--color-primaryy)]/70";
 
 
      return (

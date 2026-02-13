@@ -1,11 +1,11 @@
 import type React from "react";
-import FlexTopPart from "../ui/FlexTopPart";
+import FlexTopPart from "../../ui/FlexTopPart";
 import { Link } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5";
 import { IoMdArrowForward } from "react-icons/io";
 
 
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 
 const announcements = [

@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import FlexTopPart from "../ui/FlexTopPart";
-import LeadersCard from "../ui/LeadersCard";
+import FlexTopPart from "../../ui/FlexTopPart";
+import LeadersCard from "../../ui/LeadersCard";
 
 import { IoChevronBackOutline } from "react-icons/io5";
 import { IoChevronForward } from "react-icons/io5";

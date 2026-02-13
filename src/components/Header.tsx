@@ -1,9 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 import TopHeader from "./TopHeader";
 
 
 
 const Header = () => {
+
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+          navigate("/login");
+    }
+
+
+
     return (
           <div className="w-full flex-col sticky top-0 z-90 bg-[var(--color-secondary-card)]">
             <TopHeader />
@@ -23,7 +34,7 @@ const Header = () => {
                </div>
 
                {/* Button  */}
-                <Button>Login</Button>
+                <Button onClick={handleLogin} >Login</Button>
            </header>
          </div>
     )

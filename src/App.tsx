@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 // import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Index from './pages/Index'
+import Login from './pages/Login'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     {/* <ScrollToTop /> */}
       <Routes>
          <Route path="/" element={<Index />} />
+         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
